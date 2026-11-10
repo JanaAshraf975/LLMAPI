@@ -1,1 +1,23 @@
 2026-11-10 11:52:04 - f574255a-83c1-4771-a3de-579a823c3765 - routes - INFO - Home endpoint called
+2026-11-10 12:37:34 - 17a18d77-5b27-4fa1-a739-c36dc7f982e4 - routes - INFO - Chat request received
+2026-11-10 12:37:35 - 17a18d77-5b27-4fa1-a739-c36dc7f982e4 - openai._base_client - DEBUG - Building HTTP request: method=POST retries_taken=0
+2026-11-10 12:37:35 - 17a18d77-5b27-4fa1-a739-c36dc7f982e4 - openai._base_client - DEBUG - Sending HTTP Request: POST
+2026-11-10 12:37:35 - 17a18d77-5b27-4fa1-a739-c36dc7f982e4 - httpcore2.connection - DEBUG - connect_tcp.started host='openrouter.ai' port=443 local_address=None timeout=5.0 socket_options=None
+2026-11-10 12:37:36 - 17a18d77-5b27-4fa1-a739-c36dc7f982e4 - httpcore2.connection - DEBUG - connect_tcp.complete return_value=<httpcore2._backends.sync.SyncStream object at 0x00000208D5EFFA10>
+2026-11-10 12:37:36 - 17a18d77-5b27-4fa1-a739-c36dc7f982e4 - httpcore2.connection - DEBUG - start_tls.started ssl_context=<truststore._api.SSLContext object at 0x00000208D587A720> server_hostname='openrouter.ai' timeout=5.0
+2026-11-10 12:37:37 - 17a18d77-5b27-4fa1-a739-c36dc7f982e4 - httpcore2.connection - DEBUG - start_tls.complete return_value=<httpcore2._backends.sync.SyncStream object at 0x00000208D5FD34D0>
+2026-11-10 12:37:37 - 17a18d77-5b27-4fa1-a739-c36dc7f982e4 - httpcore2.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2026-11-10 12:37:37 - 17a18d77-5b27-4fa1-a739-c36dc7f982e4 - httpcore2.http11 - DEBUG - send_request_headers.complete
+2026-11-10 12:37:37 - 17a18d77-5b27-4fa1-a739-c36dc7f982e4 - httpcore2.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2026-11-10 12:37:37 - 17a18d77-5b27-4fa1-a739-c36dc7f982e4 - httpcore2.http11 - DEBUG - send_request_body.complete
+2026-11-10 12:37:37 - 17a18d77-5b27-4fa1-a739-c36dc7f982e4 - httpcore2.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2026-11-10 12:37:38 - 17a18d77-5b27-4fa1-a739-c36dc7f982e4 - httpcore2.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 10 Nov 2026 10:37:38 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Access-Control-Allow-Origin', b'*'), (b'X-Generation-Id', b'gen-1794307058-VxgURpLU4de28lzwFfzF'), (b'access-control-expose-headers', b'WWW-Authenticate,PAYMENT-REQUIRED,Payment-Receipt,PAYMENT-RESPONSE,Location,X-Generation-Id,x-openrouter-error-origin,x-openrouter-error-tool,X-Provider-Name,request-id,cf-ray'), (b'x-openrouter-release', b'api;fe1304cf-1cda-450c-a9d5-3b40327fdae9'), (b'set-cookie', b'__cf_bm=THg1p1qgnhVr.6PGR7tS9shQaTVRVDWnu_XRzEbjOik-1794307057.977089-1.0.1.1-JRumDa_7DirVAq4Kg4VwLu58PJez90AgtgjK1tjlNwfEnJu1pVT.CM4P3d0GOIplXmgYTXkurvIzX9Jr2Vzn..yqi2GW9h.bW.dBn3u_6yRS9TsRHOi3l_i1cPTuC0FF; HttpOnly; SameSite=None; Partitioned; Secure; Path=/; Domain=openrouter.ai; Expires=Tue, 10 Nov 2026 11:07:38 GMT'), (b'Permissions-Policy', b'payment=(self "https://checkout.stripe.com" "https://connect-js.stripe.com" "https://js.stripe.com" "https://*.js.stripe.com" "https://hooks.stripe.com")'), (b'Referrer-Policy', b'no-referrer, strict-origin-when-cross-origin'), (b'X-Content-Type-Options', b'nosniff'), (b'Content-Encoding', b'gzip'), (b'Server', b'cloudflare'), (b'CF-RAY', b'a5846c485e2cef9a-MRS'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2026-11-10 12:37:38 - 17a18d77-5b27-4fa1-a739-c36dc7f982e4 - httpx2 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-11-10 12:37:38 - 17a18d77-5b27-4fa1-a739-c36dc7f982e4 - httpcore2.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2026-11-10 12:38:16 - 17a18d77-5b27-4fa1-a739-c36dc7f982e4 - httpcore2.http11 - DEBUG - receive_response_body.complete
+2026-11-10 12:38:16 - 17a18d77-5b27-4fa1-a739-c36dc7f982e4 - httpcore2.http11 - DEBUG - response_closed.started
+2026-11-10 12:38:16 - 17a18d77-5b27-4fa1-a739-c36dc7f982e4 - httpcore2.http11 - DEBUG - response_closed.complete
+2026-11-10 12:38:16 - 17a18d77-5b27-4fa1-a739-c36dc7f982e4 - openai._base_client - DEBUG - HTTP Response: POST 200
+2026-11-10 12:38:16 - 17a18d77-5b27-4fa1-a739-c36dc7f982e4 - openai._base_client - DEBUG - request_id: None
+2026-11-10 12:48:54 - SYSTEM - httpcore2.connection - DEBUG - close.started
+2026-11-10 12:48:54 - SYSTEM - httpcore2.connection - DEBUG - close.complete
