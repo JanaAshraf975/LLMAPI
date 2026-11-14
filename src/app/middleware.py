@@ -1,5 +1,5 @@
 import uuid
-from logging_configuration import request_id_var
+from .logging_configuration import request_id_var
 
 
 async def request_id_middleware(request, call_next):
